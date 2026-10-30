@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--
+  JAX Shine Auto Detailing - DEMO WEBSITE
+  This is a practice project for a FICTIONAL business.
+  The phone number, email, address and reviews are made up.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: what Google shows in search results -->
+  <title>JAX Shine Auto Detailing | Premium Car Detailing in Jacksonville, FL</title>
+  <meta name="description" content="Premium mobile and shop car detailing in Jacksonville, Florida. Full detail, ceramic coating, paint correction and interior deep clean. Request a free quote today. (Demo site)">
+  <meta name="theme-color" content="#0b0b0c">
+
+  <!-- Social media preview (when someone shares the link) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JAX Shine Auto Detailing | Jacksonville, FL">
+  <meta property="og:description" content="Premium car detailing in Jacksonville. Get a free quote.">
+  <meta property="og:image" content="images/gallery-1.svg">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO: structured data so search engines understand the business (fictional demo values) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "JAX Shine Auto Detailing (Demo)",
+    "description": "Fictional demo business: premium car detailing in Jacksonville, Florida.",
+    "areaServed": "Jacksonville, FL",
+    "telephone": "+1-904-555-0123",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jacksonville",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Lets keyboard users jump past the menu -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="demo-banner">
+    Demo website for a fictional business. Not a real company.
+  </div>
+
+  <!-- ============ HEADER / MENU ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="JAX Shine Auto Detailing, back to top">
+        <span class="logo-mark" aria-hidden="true">JS</span>
+        <span class="logo-text">JAX <strong>Shine</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+        <span class="sr-only">Open menu</span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-small">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="eyebrow">Jacksonville, Florida</p>
+        <h1 id="hero-title">Your car deserves<br><span class="accent">a mirror finish.</span></h1>
+        <p class="hero-sub">
+          Professional detailing that protects your paint from the Florida sun, salt and sand,
+          and leaves it looking showroom new.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Request a Free Quote</a>
+          <a href="#pricing" class="btn btn-outline">See Pricing</a>
+        </div>
+        <ul class="hero-points" aria-label="Why choose us">
+          <li>Mobile service across Jacksonville</li>
+          <li>Ceramic coating experts</li>
+          <li>Satisfaction guaranteed</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-title">Detailing services</h2>
+        <p class="section-intro">From a quick refresh to long-lasting protection, pick what your car needs.</p>
+
+        <div class="card-grid three-col">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>
+            </div>
+            <h3>Exterior Wash &amp; Wax</h3>
+            <p>Hand wash, clay bar, and a hand-applied wax for deep shine and water beading.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 11l2-5h12l2 5v7h-3v-2H7v2H4v-7zm3 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm10 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+            </div>
+            <h3>Interior Deep Clean</h3>
+            <p>Vacuum, steam clean, seat and carpet shampoo, leather conditioning, and odor removal.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.4L21 9l-5 4.4L17.5 20 12 16.6 6.5 20 8 13.4 3 9l6.4-.6L12 2z"/></svg>
+            </div>
+            <h3>Paint Correction</h3>
+            <p>Machine polishing removes swirls, light scratches and dull spots to restore gloss.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5l8-3z"/></svg>
+            </div>
+            <h3>Ceramic Coating</h3>
+            <p>A durable protective layer that repels water, dirt and UV rays for years, not weeks.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke-width="2"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Headlight Restoration</h3>
+            <p>Remove yellowing and haze so you see better at night and your car looks younger.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10H3V10zm6 10h6v-6H9v6z"/></svg>
+            </div>
+            <h3>Engine Bay Clean</h3>
+            <p>Safe degrease and dress for a clean engine bay that looks great when the hood opens.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section section-dark" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <p class="eyebrow">Example pricing</p>
+        <h2 id="pricing-title">Simple, upfront prices</h2>
+        <p class="section-intro">Choose your vehicle size to see prices. These are sample prices for this demo.</p>
+
+        <!-- Buttons that change the prices (see script.js) -->
+        <div class="size-picker" role="group" aria-label="Vehicle size">
+          <button type="button" class="size-btn is-active" data-size="sedan" aria-pressed="true">Car / Sedan</button>
+          <button type="button" class="size-btn" data-size="suv" aria-pressed="false">SUV / Crossover</button>
+          <button type="button" class="size-btn" data-size="truck" aria-pressed="false">Truck / Van</button>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Express Shine</h3>
+            <p class="price"><span class="currency">$</span><span data-price-base="79">79</span></p>
+            <ul>
+              <li>Hand wash and dry</li>
+              <li>Wheels and tires cleaned</li>
+              <li>Windows inside and out</li>
+              <li>Quick interior vacuum</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" data-plan="Express Shine">Choose Express</a>
+          </article>
+
+          <article class="price-card featured">
+            <p class="badge">Most popular</p>
+            <h3>Full Detail</h3>
+            <p class="price"><span class="currency">$</span><span data-price-base="189">189</span></p>
+            <ul>
+              <li>Everything in Express</li>
+              <li>Clay bar and hand wax</li>
+              <li>Interior steam clean</li>
+              <li>Leather and trim conditioning</li>
+              <li>Odor removal</li>
+            </ul>
+            <a href="#contact" class="btn" data-plan="Full Detail">Choose Full Detail</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Ceramic Protection</h3>
+            <p class="price"><span class="currency">$</span><span data-price-base="499">499</span></p>
+            <ul>
+              <li>Everything in Full Detail</li>
+              <li>Paint decontamination</li>
+              <li>1-step paint correction</li>
+              <li>2-year ceramic coating</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" data-plan="Ceramic Protection">Choose Ceramic</a>
+          </article>
+        </div>
+        <p class="fine-print">Sample prices for a fictional business. SUVs add about 20%, trucks and vans about 35%. Heavily soiled vehicles may need a custom quote.</p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <p class="eyebrow">Our work</p>
+        <h2 id="gallery-title">Gallery</h2>
+        <p class="section-intro">Placeholder illustrations for this demo. A real client site would show real before-and-after photos.</p>
+
+        <ul class="gallery" id="gallery-grid">
+          <li>
+            <button type="button" class="gallery-item" data-full="images/gallery-1.svg" data-caption="Full detail on an orange sedan">
+              <img src="images/gallery-1.svg" alt="Orange sedan after a full detail" loading="lazy" width="760" height="460">
+              <span class="gallery-caption">Full detail</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="images/gallery-2.svg" data-caption="Ceramic coating on a black SUV">
+              <img src="images/gallery-2.svg" alt="Black SUV with a ceramic coating" loading="lazy" width="760" height="460">
+              <span class="gallery-caption">Ceramic coating</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="images/gallery-3.svg" data-caption="Paint correction on a white coupe">
+              <img src="images/gallery-3.svg" alt="White coupe after paint correction" loading="lazy" width="760" height="460">
+              <span class="gallery-caption">Paint correction</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="images/gallery-4.svg" data-caption="Interior deep clean for a red truck">
+              <img src="images/gallery-4.svg" alt="Red pickup truck after an interior deep clean" loading="lazy" width="760" height="460">
+              <span class="gallery-caption">Interior deep clean</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="images/gallery-5.svg" data-caption="Exterior wash and wax on a blue sedan">
+              <img src="images/gallery-5.svg" alt="Blue sedan after an exterior wash and wax" loading="lazy" width="760" height="460">
+              <span class="gallery-caption">Exterior wash and wax</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="images/gallery-6.svg" data-caption="Headlight restoration on an orange SUV">
+              <img src="images/gallery-6.svg" alt="Orange SUV with restored headlights" loading="lazy" width="760" height="460">
+              <span class="gallery-caption">Headlight restoration</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section-dark" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2 id="about-title">Jacksonville born, detail obsessed</h2>
+          <p>
+            JAX Shine started with one simple idea: a car wash should never be rushed.
+            We work on every vehicle like it is our own, using quality products that are safe for your paint.
+          </p>
+          <p>
+            Between the sun, the salt air and the lovebugs, Florida is tough on cars.
+            We know how to protect them, and we come to you with our mobile setup, or you can drop off at our shop.
+          </p>
+          <p class="note">This is a fictional business created for a website practice project.</p>
+        </div>
+
+        <ul class="stats" aria-label="Company highlights">
+          <li><strong>1,200+</strong><span>Cars detailed</span></li>
+          <li><strong>5.0</strong><span>Average rating</span></li>
+          <li><strong>8</strong><span>Years of experience</span></li>
+          <li><strong>100%</strong><span>Satisfaction guarantee</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section" aria-labelledby="reviews-title">
+      <div class="container">
+        <p class="eyebrow">Happy customers</p>
+        <h2 id="reviews-title">What people say</h2>
+        <p class="section-intro">Sample reviews written for this demo.</p>
+        <div class="card-grid three">
+          <figure class="card quote">
+            <blockquote>My truck looks brand new. The ceramic coating makes washing it so easy.</blockquote>
+            <figcaption>Sample customer, Riverside</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>They came to my office and detailed my car while I worked. Super convenient.</blockquote>
+            <figcaption>Sample customer, Southside</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>I could not believe the interior. Smells fresh and looks spotless.</blockquote>
+            <figcaption>Sample customer, San Marco</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-dark" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Free quote</p>
+          <h2 id="contact-title">Request your quote</h2>
+          <p>Tell us about your car and we will reply within one business day.</p>
+
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> <a href="tel:+19045550123">(904) 555-0123</a></li>
+            <li><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><strong>Area:</strong> Jacksonville, FL and nearby beaches</li>
+            <li><strong>Hours:</strong> Mon to Sat, 8 AM to 6 PM</li>
+          </ul>
+          <p class="note">Demo contact details. The phone number and email are not real.</p>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <p class="error" id="name-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Express Shine</option>
+              <option>Full Detail</option>
+              <option>Ceramic Protection</option>
+              <option>Paint Correction</option>
+              <option>Interior Deep Clean</option>
+              <option>Headlight Restoration</option>
+              <option>Not sure yet</option>
+            </select>
+            <p class="error" id="service-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="vehicle">Vehicle (year, make, model)</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="2020 Toyota Camry">
+          </div>
+
+          <div class="field">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-block">Send Quote Request</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> JAX Shine Auto Detailing. Demo website, fictional business.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Big photo viewer (opens when you click a gallery picture) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close photo">&times;</button>
+    <figure>
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
